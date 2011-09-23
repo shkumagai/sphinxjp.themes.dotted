@@ -1,6 +1,6 @@
 .installed.cfg
-.pyc
-.swp
+*.pyc
+*.swp
 bin
 _build
 develop-eggs
@@ -8,4 +8,4 @@ dist
 eggs
 parts
 *.egg-info
-.*~
+*.*~
