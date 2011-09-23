@@ -7,5 +7,5 @@ develop-eggs
 dist
 eggs
 parts
-src/.*.egg-info
+*.egg-info
 .*~
