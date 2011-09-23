@@ -19,15 +19,15 @@ classifiers = [
 ]
 
 setup(
-    name='sphinxjp.themes.notebook',
+    name='sphinxjp.themes.dotted',
     version=version,
-    description='A sphinx theme for Notebook style.',
+    description='A sphinx theme for Dotted style.',
     long_description=long_description,
     classifiers=classifiers,
     keywords=['sphinx', 'reStructuredText', 'theme'],
     author='Shoji KUMAGAI',
     author_email='take dot this dot 2 dot your dot grave at gmail dot com',
-    url='https://bitbucket.org/shkumagai/sphinxjp.themes.notebook',
+    url='https://github.com/shkumagai/sphinxjp.themes.dotted',
     license='MIT',
     namespace_packages=['sphinxjp', 'sphinxjp.themes'],
     packages=find_packages('src'),
@@ -42,7 +42,7 @@ setup(
     ],
     entry_points="""
         [sphinx_themes]
-        path = sphinxjp.themes.notebook:template_path
+        path = sphinxjp.themes.dotted:template_path
 
     """,
     zip_safe=False,

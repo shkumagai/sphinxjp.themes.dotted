@@ -1,6 +1,6 @@
-=======================================
- Notebok style theme sample for Sphinx
-=======================================
+======================================
+ Dotted style theme sample for Sphinx
+======================================
 
 Quick start
 ===========
@@ -9,7 +9,7 @@ install:
 
 .. code-block:: bash
 
-    $ easy_install sphinxjp.themes.notebook
+    $ easy_install sphinxjp.themes.dotted
 
 
 setup your ``conf.py`` with:
@@ -17,7 +17,7 @@ setup your ``conf.py`` with:
 .. code-block:: bash
 
     extensions = ['sphinxjp.themescore']
-    html_theme = 'notebook'
+    html_theme = 'dotted'
 
 and run:
 
@@ -31,9 +31,9 @@ then your will get this page's style HTML output.
 Links
 =====
 
-:download: https://bitbucket.org/shkumagai/sphinxjp.themes.notebook
-:repository: https://bitbucket.org/shkumagai/sphinxjp.themes.notebook
-:bug tracker: https://bitbucket.org/shkumagai/sphinxjp.themes.notebook/issues
+:download: https://github.com/shkumagai/sphinxjp.themes.dotted
+:repository: https://github.com/shkumagai/sphinxjp.themes.dotted
+:bug tracker: https://github.com/shkumagai/sphinxjp.themes.dotted/issues
 
 
 Contents

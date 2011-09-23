@@ -1,15 +1,15 @@
-Notebook style theme for Sphinx.
+Dotted style theme for Sphinx.
 
 Features
 ========
-* provide ``notebook`` theme for render HTML document.
+* provide ``dotted`` theme for render HTML document.
 
 
 Set up
 ======
 Make environment with easy_install::
 
-    $ easy_install sphinxjp.themes.notebook
+    $ easy_install sphinxjp.themes.dotted
 
 
 Convert Usage
@@ -17,7 +17,7 @@ Convert Usage
 setup conf.py with::
 
     extensions = ['sphinxjp.themecore']
-    html_theme = 'notebook'
+    html_theme = 'dotted'
 
 and run::
 
