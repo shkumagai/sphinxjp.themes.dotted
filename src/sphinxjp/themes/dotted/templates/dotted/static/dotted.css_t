@@ -275,7 +275,7 @@ div.admonition {
     -khtml-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
-    border-style: dotted;
+    border-style: solid;
     border-width: thin;
     border-color: #dcdcdc;
     padding: 10px 15px 10px 15px;
@@ -417,7 +417,7 @@ pre {
     -khtml-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    border-style: dotted;
+    border-style: solid;
     border-width: thin;
     border-color: #0c3762;
     margin: 0 0 12px 0;
