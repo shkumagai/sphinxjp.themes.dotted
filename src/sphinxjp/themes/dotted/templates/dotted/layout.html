@@ -17,7 +17,7 @@
 
 {% macro nav() %}
         <p>
-        {%- block notebookrel1 %}
+        {%- block dottedrel1 %}
         {%- endblock %}
         {%- if prev %}
         &#171;&#160;&#160;<a href="{{ prev.link|e }}">{{ prev.title }}</a>
@@ -28,7 +28,7 @@
         &#160;&#160;::&#160;&#160;
         <a href="{{ next.link|e }}">{{ next.title }}</a>&#160;&#160;&#187;
         {%- endif %}
-        {%- block noteboolrel2 %}
+        {%- block dottedlrel2 %}
         {%- endblock %}
         </p>
 {% endmacro %}
@@ -36,7 +36,7 @@
 {% block content %}
         <div class="header">
           <div class="header-top">
-            {%- block noteheader %}
+            {%- block dottedheader %}
             {%- if theme_full_logo != "false" %}
             <a href="{{ pathto('index') }}">
               <img class="logo" src="{{ pathto('_static/' + logo, 1) }}" alt="Logo"/>

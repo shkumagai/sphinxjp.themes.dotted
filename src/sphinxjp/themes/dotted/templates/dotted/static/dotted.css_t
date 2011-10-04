@@ -267,7 +267,7 @@ table.index a:hover, table.index a:active {
 }
 
 
-/* -- Notebook styles and layout -------------------------------------------- */
+/* -- dotted styles and layout -------------------------------------------- */
 
 /* Rounded corner boxes */
 /* Common declarations */
