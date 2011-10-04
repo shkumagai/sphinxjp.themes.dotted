@@ -50,6 +50,13 @@
             {%- endif %}
             {%- endblock %}
           </div>
+          <div class="header-middle">
+            <div class="globaltoc">
+              {%- block sidebarrel %}
+              {%- include "globaltoc.html" %}
+              {%- endblock %}
+            </div>
+          </div>
           <div class="topnav">
             {{ nav() }}
           </div>
