@@ -11,11 +11,18 @@
 // :license: MIT, see LICENSE for details.
 //
 //
-jQuery(function () {
-    jQuery("div.topnav > p > a").click(function (event) {
+jQuery(function(){
+    jQuery("div.topnav > p > a").click(function(event){
         event.stopPropagation();
     });
-    jQuery("div.topnav,div.header-middle").click(function () {
-        jQuery("div.header-middle").slideToggle("slow");
+    jQuery("div.topnav").click(function(){
+        jQuery("div.topnav ul li").slideToggle("slow");
+    });
+
+    jQuery("div.topnav ul li").hover(function(){
+        jQuery(">ul:not(:animated)",this).slideDown("fast");
+    },
+    function(){
+        jQuery(">ul",this).slideUp("fast");
     });
 });

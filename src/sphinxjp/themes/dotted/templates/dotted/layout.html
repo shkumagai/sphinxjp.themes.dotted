@@ -31,6 +31,7 @@
         {%- block dottedlrel2 %}
         {%- endblock %}
         </p>
+        {{ toctree() }}
 {% endmacro %}
 
 {% block content %}
@@ -53,9 +54,7 @@
           </div>
           <div class="header-middle">
             <div class="globaltoc">
-              {%- block sidebarrel %}
-              {%- include "globaltoc.html" %}
-              {%- endblock %}
+              {{ toctree() }}
             </div>
           </div>
           <div class="topnav">
