@@ -15,14 +15,8 @@ jQuery(function(){
     jQuery("div.topnav > p > a").click(function(event){
         event.stopPropagation();
     });
-    jQuery("div.topnav").click(function(){
-        jQuery("div.topnav ul li").slideToggle("slow");
-    });
 
-    jQuery("div.topnav ul li").hover(function(){
-        jQuery(">ul:not(:animated)",this).slideDown("fast");
-    },
-    function(){
-        jQuery(">ul",this).slideUp("fast");
+    jQuery("div.topnav").click(function(){
+        jQuery("div.topnav ul").slideToggle(500);
     });
 });

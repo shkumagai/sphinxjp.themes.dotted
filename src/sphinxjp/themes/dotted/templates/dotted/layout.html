@@ -20,18 +20,17 @@
         {%- block dottedrel1 %}
         {%- endblock %}
         {%- if prev %}
-        &#171;&#160;&#160;<a href="{{ prev.link|e }}">{{ prev.title }}</a>
+        &#171;&#160;&#160;<a href="{{ prev.link|e }}">{{ _('Previous') }}</a>
         &#160;&#160;::&#160;&#160;
         {%- endif %}
         <a class="uplink" href="{{ pathto(master_doc) }}">{{ _('Contents') }}</a>
         {%- if next %}
         &#160;&#160;::&#160;&#160;
-        <a href="{{ next.link|e }}">{{ next.title }}</a>&#160;&#160;&#187;
+        <a href="{{ next.link|e }}">{{ _('Next') }}</a>&#160;&#160;&#187;
         {%- endif %}
         {%- block dottedlrel2 %}
         {%- endblock %}
         </p>
-        {{ toctree() }}
 {% endmacro %}
 
 {% block content %}
@@ -52,13 +51,11 @@
             {%- endif %}
             {%- endblock %}
           </div>
-          <div class="header-middle">
+          <div class="topnav">
+            {{ nav() }}
             <div class="globaltoc">
               {{ toctree() }}
             </div>
-          </div>
-          <div class="topnav">
-            {{ nav() }}
           </div>
         </div>
         <div class="wrapper">
