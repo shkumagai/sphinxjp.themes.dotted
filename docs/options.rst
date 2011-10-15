@@ -11,4 +11,5 @@ Sample
 HTML theme options
 ==================
 
-There are no options currently.
+:slidetoc:
+   Enable global toc (table of contents) tree on top-navigation bar. Defaults to false.

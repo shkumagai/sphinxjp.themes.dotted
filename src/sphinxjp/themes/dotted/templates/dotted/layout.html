@@ -9,7 +9,9 @@
     :license: MIT, see LICENSE for details.
 #}
 {% extends "basic/layout.html" %}
+{%- if theme_slidetoc|tobool %}
 {% set script_files = script_files + ['_static/dotted.js'] %}
+{%- endif %}
 
 {# do not display relbars #}
 {% block relbar1 %}{% endblock %}
@@ -20,13 +22,13 @@
         {%- block dottedrel1 %}
         {%- endblock %}
         {%- if prev %}
-        &#171;&#160;&#160;<a href="{{ prev.link|e }}">{{ _('Previous') }}</a>
+        &#171;&#160;&#160;<a href="{{ prev.link|e }}">{{ prev.title }}</a>
         &#160;&#160;::&#160;&#160;
         {%- endif %}
         <a class="uplink" href="{{ pathto(master_doc) }}">{{ _('Contents') }}</a>
         {%- if next %}
         &#160;&#160;::&#160;&#160;
-        <a href="{{ next.link|e }}">{{ _('Next') }}</a>&#160;&#160;&#187;
+        <a href="{{ next.link|e }}">{{ next.title }}</a>&#160;&#160;&#187;
         {%- endif %}
         {%- block dottedlrel2 %}
         {%- endblock %}

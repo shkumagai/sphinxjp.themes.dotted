@@ -10,8 +10,15 @@ copyright = u'2011, Sphinx-users.jp'
 
 version = '0.1.0'
 
+
 # -- Options for HTML output ---------------------------------------------------
 
 extensions = ['sphinxjp.themecore']
 html_theme = 'dotted'
 
+
+# -- HTML theme options for `dotted` style -------------------------------------
+
+html_theme_options = {
+    'slidetoc': True,
+}

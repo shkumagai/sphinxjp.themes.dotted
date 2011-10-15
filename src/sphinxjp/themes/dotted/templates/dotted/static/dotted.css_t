@@ -42,19 +42,25 @@ div.footer {
 /* -- link colors and text decoration --------------------------------------- */
 
 a:link {
+    /* color: #895b8a; */
+    color: #915c8b;
     font-weight: bold;
     text-decoration: none;
 }
 
 a:visited {
+    /* color: #895b8a; */
+    color: #915c8b;
     font-weight: bold;
     text-decoration: none;    
 }
 
 a:hover, a:active {
+    color: #a7ce38;
     font-weight: bold;
     text-decoration: underline;
 }
+
 
 /* -- Some headers act as anchors, don't give them a hover effect ----------- */
 
@@ -78,13 +84,14 @@ a.headerlink {
     padding-left: 5px;
 }
 
-a.headerlink:hover {
+a.headerlink:hover, a.headerlink:visited {
     color: #a7ce38;
 }
 
 /* -- basic text elements --------------------------------------------------- */
 
 div.wrapper {
+    border: solid 1px #DDD;
     -webkit-border-radius: 5px;
     -khtml-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -104,6 +111,7 @@ div.content {
 /* -- heading and navigation ------------------------------------------------ */
 
 div.header {
+    border: solid 1px #DDD;
     -webkit-border-radius: 0px 0px 4px 4px;
     -khtml-border-radius: 0px 0px 4px 4px;
     -moz-border-radius: 0px 0px 4px 4px;
@@ -190,6 +198,7 @@ div.topnav p a {
 }
 
 div.topnav div.globaltoc {
+    border: solid 1px #DDD;
     position: absolute;
     -webkit-border-radius: 0 0 4px 4px;
     -khtml-border-radius: 0 0 4px 4px;
@@ -277,6 +286,7 @@ table.index a:hover, table.index a:active {
 /* Rounded corner boxes */
 /* Common declarations */
 div.admonition {
+    background: #eaedf7;
     -webkit-border-radius: 10px;
     -khtml-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -295,8 +305,7 @@ div.danger, div.error {
     background: -moz-linear-gradient(top, #f6bfbc, #f6bfbc 60%, #fff);
     background: -webkit-gradient(linear, left top, left bottom,
                                  from(#f6bfbc), color-stop(0.6, #f6bfbc), to(#fff));
-    padding: 10px 15px 10px 80px;
-*/
+    padding: 10px 15px 10px 80px; */
     min-height: 42px;
 }
 
@@ -306,8 +315,7 @@ div.warning, div.caution, div.attention {
     background: -moz-linear-gradient(top, #fce2c4, #fce2c4 60%, #fff);
     background: -webkit-gradient(linear, left top, left bottom,
                                  from(#fce2c4), color-stop(0.6, #fce2c4), to(#fff));
-    padding: 10px 15px 10px 80px;
-*/
+    padding: 10px 15px 10px 80px; */
     min-height: 42px;
 }
 
@@ -317,8 +325,7 @@ div.note, div.important {
     background: -moz-linear-gradient(top, #fffbc6, #fffbc6 60%, #fff);
     background: -webkit-gradient(linear, left top, left bottom,
                                  from(#fffbc6), color-stop(0.6, #fffbc6), to(#fff));
-    padding: 10px 15px 10px 80px;
-*/
+    padding: 10px 15px 10px 80px; */
     min-height: 42px;
 }
 
@@ -328,8 +335,7 @@ div.hint, div.tip {
     background: -moz-linear-gradient(top, #e4ffde, #e4ffde 60%, #fff);
     background: -webkit-gradient(linear, left top, left bottom,
                                  from(#e4ffde), color-stop(0.6, #e4ffde), to(#fff));
-    padding: 10px 15px 10px 80px;
-*/
+    padding: 10px 15px 10px 80px; */
     min-height: 42px;
 }
 
@@ -338,8 +344,7 @@ div.seealso {
 /*  background: linear-gradient(top, #eaf4fc, #eaf4fc 60%, #fff);
     background: -moz-linear-gradient(top, #eaf4fc, #eaf4fc 60%, #fff);
     background: -webkit-gradient(linear, left top, left bottom,
-                                 from(#eaf4fc), color-stop(0.6, #eaf4fc), to(#fff));
-*/
+                                 from(#eaf4fc), color-stop(0.6, #eaf4fc), to(#fff)); */
     min-height: 42px;
 }
 
@@ -429,6 +434,7 @@ pre {
     margin: 0 0 12px 0;
     padding: 0.8em;
     background-color: #F0F0F0;
+    line-height: 1.1em;
 }
 
 .highlight {
