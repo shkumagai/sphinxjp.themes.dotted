@@ -104,8 +104,70 @@ div.wrapper {
     background: #FFFCFF;
 }
 
-div.content {
+div.documentwrapper {
+   width: 100%;
+}
+
+div.bodywrapper {
+   margin: 0;
+}
+
+div.body { 
     font-size: 0.9em;
+}
+
+{%- if theme_enablesidebar|tobool %}
+div.documentwrapper {
+   float: left;
+}
+
+div.bodywrapper {
+    margin: 0 0 0 260px;
+    {%- if theme_rightsidebar|tobool %}
+    margin: 0 260px 0 0;
+    {%- endif  %}
+}
+
+div.sphinxsidebarwrapper {
+    padding: 0;
+}
+
+div.sphinxsidebar {
+    margin: 0;
+    margin-left: -100%;
+    padding: 0.5em 15px 15px 0;
+    font-size: 0.9em;
+    text-align: left;
+    border-right: 1px solid #DDD;
+    {%- if theme_rightsidebar|tobool %}
+    float: right;
+    padding: 0.5em 0 15px 15px;
+    border-right: none;
+    border-left: 1px solid #DDD;
+    {%- endif %}
+}
+
+div.sphinxsidebar h3, div.sphinxsidebar h4 {
+    margin: 1em 0 0.5em 0;
+    font-size: 1em;
+    padding: 0.1em 0 0.1em 0;
+    border-bottom: 1px solid #DDD;
+}
+
+div.sphinxsidebar ul {
+    padding-left: 1.5em;
+    margin-top: 7px;
+    padding: 0;
+    lineheight: 130%;
+}
+
+div.sphinxsidebar ul ul {
+    margin-left: 20px;
+}
+{%- endif %}
+
+div.clearer {
+    clear: both;
 }
 
 /* -- heading and navigation ------------------------------------------------ */
@@ -402,7 +464,7 @@ li {
     line-height: 1.3;
 }
 
-div.content ul > li {
+div.body ul > li {
 /*  -moz-background-clip: border;
     -moz-background-inline-policy: continuous;
     -moz-background-origin: padding;
@@ -486,7 +548,7 @@ hr {
     div.topnav, div.bottomnav, div.header, table.index {
         display: none;
     }
-    div.content {
+    div.body {
         margin: 0px;
         padding: 0px;
     }

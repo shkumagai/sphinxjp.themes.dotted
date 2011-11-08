@@ -61,16 +61,34 @@
           </div>
         </div>
         <div class="wrapper">
-          <div class="content">
-            {% block body %}{% endblock %}
+
+          {%- if theme_enablesidebar|tobool %}
+          {%- block sidebar1 %} {# possible location for sidebar #} {% endblock %}
+          {%- endif %}
+
+          <div class="document">
+            <div class="documentwrapper">
+
+          {%- if render_sidebar %}
+              <div class="bodywrapper">
+          {%- endif %}
+                <div class="body">
+                  {% block body %}{% endblock %}
+                </div>
+
+          {%- if render_sidebar %}
+              </div>
+          {%- endif %}
+
+            </div>
+          {%- if theme_enablesidebar|tobool %}
+          {%- block sidebar2 %}{{ sidebar() }}{% endblock %}
+          {%- endif %}
+
+            <div class="clearer"></div>
           </div>
-          {#{%- if display_toc %}
-          <div id="toc">
-            <h3>Table Of Content</h3>
-            {{ toc }}
-          </div>
-          {%- endif %}#}
         </div>
+
         <div class="bottomnav">
           {{ nav() }}
         </div>
