@@ -8,7 +8,7 @@ master_doc = 'index'
 project = u'sphinx theme for dotted style'
 copyright = u'2011, Sphinx-users.jp'
 
-version = '0.1.0'
+version = '0.1.1'
 
 # -- Options for HTML output ---------------------------------------------------
 
@@ -19,4 +19,6 @@ html_theme = 'dotted'
 
 html_theme_options = {
     'slidetoc': True,
+    'enablesidebar': True,
+    'rightsidebar': True,
 }
