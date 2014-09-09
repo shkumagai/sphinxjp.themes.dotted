@@ -9,7 +9,7 @@ install:
 
 .. code-block:: bash
 
-    $ easy_install sphinxjp.themes.dotted
+    $ pip sphinxjp.themes.dotted
 
 
 setup your ``conf.py`` with:

@@ -7,16 +7,15 @@ Features
 
 Set up
 ======
-Make environment with easy_install::
+Make environment with pip::
 
-    $ easy_install sphinxjp.themes.dotted
+    $ pip sphinxjp.themes.dotted
 
 
 Convert Usage
 =============
 setup conf.py with::
 
-    extensions = ['sphinxjp.themecore']
     html_theme = 'dotted'
 
 and run::
