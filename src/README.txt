@@ -16,7 +16,6 @@ Convert Usage
 =============
 setup conf.py with::
 
-    extensions = ['sphinxjp.themecore']
     html_theme = 'dotted'
 
 and run::

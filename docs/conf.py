@@ -12,7 +12,6 @@ version = '0.1.1'
 
 # -- Options for HTML output ---------------------------------------------------
 
-extensions = ['sphinxjp.themecore']
 html_theme = 'dotted'
 
 # -- HTML theme options for `dotted` style -------------------------------------

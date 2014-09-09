@@ -16,7 +16,6 @@ setup your ``conf.py`` with:
 
 .. code-block:: bash
 
-    extensions = ['sphinxjp.themescore']
     html_theme = 'dotted'
 
 and run:
